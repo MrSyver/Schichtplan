@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Schichtplan Püttage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% load static %}
+<style>
+
+  body {font-family: "DIN", "DIN", "DIN";}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+
+  .w3-bar-item.w3-button:hover {
+    background-color: inherit !important;
+  }
+
+  .w3-bar {
+    background: white;
+    color: black !important;
+  }
+
+  .nav-menu a {
+    border-bottom: 2px solid red;
+    background: white;
+  }
+
+  .nav-menu a:hover {
+    transform: translateY(-4px); /* Menüpunkte um 3px anheben */
+    background: white;
+  }
+
+  .logout-btn {
+    position: absolute;
+    right: 10px;
+  }
+
+  .logo {
+    order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  input::placeholder {
+    color: #ccc; /* Hier kannst du eine andere Farbe wählen, wenn du möchtest */
+  }
+
+  .w3-table th, .w3-table td {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="height: 100px;">
+  <div class="w3-bar w3-white w3-padding w3-card" style="height: 100%; letter-spacing:4px; background-image: url('{{ MEDIA_URL }}stsbheader.png'); background-position: center center; background-repeat: no-repeat; background-size: auto 100%;">
+    <div class="nav-menu" style="position: absolute; bottom: 0; left: 100px;">
+        <a href="#start" class="w3-bar-item w3-button">Start</a>
+        <a href="#schichtplan" class="w3-bar-item w3-button">Schichtplan</a>
+        <a href="#kontakt" class="w3-bar-item w3-button">Kontakt</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+    <!-- Start Section -->
+    <div class="w3-row w3-padding-64" id="start">
+        <br>
+        <br>
+        <h1 class="w3-center">Schichtplanung für die Püttage</h1>
+        <div style="text-align:center;">
+          <h5>Liebe Schützenbrüder,</h5>
+          <p>Die diesjährigen Püttage stehen wieder vor der Tür und wie jedes Jahr suchen wir Helfer für unseren Bierstand. Es ist eine wunderbare Gelegenheit, gemeinsam Spaß zu haben, den Verein zu unterstützen und das ein oder andere Bier zu trinken. </p>
+          <p>Wenn ihr Zeit und Lust habt, euch in dieses fröhliche Ereignis einzubringen, seid ihr herzlich eingeladen, euch zu den euch passenden Zeiten in die Tabelle einzutragen. Eure Unterstützung ist nicht nur von unschätzbarem Wert, sondern leistet auch einen wesentlichen Beitrag für den Verein und weitere schöne Schützenfeste zusammen.</p>
+          <p><a href="https://docs.google.com/spreadsheets/d/14OObIXFZP3MGH9-xLfm1_ovaD7gIEwsHjVYCmeUVoKc/edit?usp=sharing" target="_blank">Hier klicken, um euch in die Tabelle einzutragen</a>.</p>
+          <p>Vielen Dank im Voraus für eure Unterstützung, und wir freuen uns darauf, mit euch das ein oder andere Bier zu trinken!</p>
+      </div>
+      
+    </div>
+    
+    <hr>
+
+    <div class="w3-row w3-padding-64" id="schichtplan" style="text-align: center;">
+
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ--eHXDHa7ajq5jnkn1m0douK05XC-fZVzHubzPxdpr6eSdmsQX_vOEvrIftf--8w-jwHogJ_P0ZTu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="900" height="900"></iframe>
+      
+      <h4><a href="https://docs.google.com/spreadsheets/d/14OObIXFZP3MGH9-xLfm1_ovaD7gIEwsHjVYCmeUVoKc/edit?usp=sharing" target="_blank">Hier klicken zum Eintragen</a></h4>
+
+      <hr>
+
+    </div>
+    
+    <hr>
+  
+    <div class="w3-row w3-padding-64" id="kontakt" style="text-align: center;">
+      <!-- Your content here -->
+      <h2 class="w3-text-center">Kontakt</h2>
+      <p>Bei Fragen wendet euch gerne an eure jeweiligen Hauptmänner oder meldet euch bei uns unter den folgenden Nummern.</p>
+      <p>Tobias Martin +49 171 1974474</p>
+      <p>Moritz Martin +49 176 82241879</p>
+      <p>Caspar Martin +49 123 45678910</p>
+      <p>Tjorven Martin +49 123 45678910</p>
+    </div>
+
+    <hr>
+    
+  </div> 
+
+<!-- Footer -->
+<div>
+  <footer class="w3-center w3-light-grey w3-padding-32">
+      <a href="impressum.html" class="w3-bar-item w3-button">Impressum</a>
+      <a href="datenschutz.html" class="w3-bar-item w3-button">Datenschutz</a>
+  </footer>
+</div>
+
+</body>
+</html>
